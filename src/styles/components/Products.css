@@ -1,0 +1,116 @@
+.Products-items {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  display: grid;
+}
+.Products-item {
+  text-decoration: none;
+  box-shadow: 8px 14px 38px rgba(39,44,49,0.06), 1px 3px 8px rgba(39,44,49,0.03);
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}
+.Products-item-info {
+  padding: 10px;
+}
+.Products-item-info h2 {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.Products-item-info h2 span {
+  color: #33b13a;
+}
+.Products-item-info p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.Products-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  object-fit: contain;
+}
+
+.Products-item button:hover {
+  background-color: rgba(39,44,49,0.06);
+}
+
+.Pokemon-type {
+  display: flex;
+}
+
+.Pokemon-type-text {
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.Pokemon-bg-img {
+  border-radius: 25%;
+  background-color: #F2F5C8;
+  max-width: 50%;
+}
+
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+ 
+.btn-close {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.click:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.flex-container {
+  flex-direction:row;
+  display: -webkit-flex;
+  display: flex;
+  background-color: rgb(255, 253, 253);
+  width: 100%;
+  height: 100px;
+  align-content: center;
+  flex-flow: row wrap; 
+}
+
+.flex-item {
+  background-color: lightblue;
+  width: 40%;
+  height: 100px;
+  margin: 10px;
+  order: 1;  
+}
